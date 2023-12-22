@@ -1,22 +1,22 @@
 const inputField = document.getElementById('inputField');
 const outputField = document.getElementById('outputField');
 
-inputField.addEventListener('keyUp', getValue);
+inputField.addEventListener('keyup', getValue);
 
 function getValue() {
-  ouputField.innerHTML = inputField.value;
+  outputField.innerHTML = inputField.value;
 }
 
 const uppercaseBtn = document.querySelector('.uppercase');
 
 uppercaseBtn.addEventListener('click', () => {
-  return (outputField.innerHTML = outputField.innerHTML.toLocaleUpperCase() );
+  return (outputField.innerHTML = outputField.innerHTML.toUpperCase() );
 
 });
 
 
 document.querySelector('.lowercase').onclick = () => {
-return (outputField.innerHTML = outputField.innerHTML.toLocaleLowerCase());
+return (outputField.innerHTML = outputField.innerHTML.toLowerCase());
 
 };
 
@@ -29,7 +29,7 @@ boldBtn.addEventListener('click', () => {
     boldBtn.classList.remove('active');
     outputField.style.fontWeight = "400";
   } else {
-    boldBtn.classList.add('contains');
+    boldBtn.classList.add('active');
     outputField.style.fontWeight = "700";
   }
 })
